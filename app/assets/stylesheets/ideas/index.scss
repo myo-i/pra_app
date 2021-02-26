@@ -1,3 +1,5 @@
+@import 'swiper';
+
 .bg-l {
   background-color: lightgray;
 }
@@ -7,41 +9,3 @@
   height: 100%;
 }
 
-.swiper-container {
-  width: 600px;
-  height: 800px;
-}
-
-.swiper-slide {
-  height: 100%;
-}
-
-.bg-img1 {
-  z-index: 4;
-  background-image: url(ideas/imgs/ibrahim-mushan-qnjKufYqIIE-unsplash.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.bg-img2 {
-  z-index: 4;
-  background-image: url(ideas/imgs/marco-midmore-b-uiCzSxPdk-unsplash.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.bg-img3 {
-  z-index: 4;
-  background-image: url(ideas/imgs/juli-kosolapova-aQiXrqNMZ0g-unsplash.jpg) !important;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
