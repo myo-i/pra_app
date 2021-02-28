@@ -3,10 +3,6 @@
 @import 'mixin';
 
 
-.container {
-  width: 100%;
-  height: 100%;
-}
 
 .ht-100 {
   height: 100px;
@@ -15,7 +11,6 @@
 .logo {
   font-family: 'Krona One', sans-serif;
   font-size: 80px;
-
 }
 
 .btn-ff {
@@ -33,9 +28,30 @@
     color: black;
     @include animation(
     $name: kf-hover-hbtn,
+    $duration: 0.5s
     );
   }
 }
+
+#container2 {
+  height: 1500px;
+}
+
+.set-pad-100 {
+  padding: 100px;
+}
+
+.des-title {
+  font-family: 'Krona One', sans-serif;
+  font-size: 40px;
+}
+
+.des-stitle {
+  font-family: 'Krona One', sans-serif;
+  font-size: 20px;
+}
+
+
 
 @keyframes kf-hover-hbtn {
   0% {
