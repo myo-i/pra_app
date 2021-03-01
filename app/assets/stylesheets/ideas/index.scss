@@ -34,11 +34,13 @@
 }
 
 #container2 {
-  height: 1500px;
+  height: 3000px;
   text-align: center;
 }
 
-.set-pad-100 {
+.in-container2 {
+  width: 100%;
+  height: 700px;
   padding: 100px;
 }
 
@@ -61,6 +63,15 @@
 
 .des-MOB {
   font-size: 40px;
+}
+
+.usage-1 {
+  width: 50%;
+  height: 700px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $cWhite;
 }
 
 
