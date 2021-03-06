@@ -1,0 +1,98 @@
+@import 'mixin';
+
+$cWhite: white;
+
+#container {
+  height: 720px;
+}
+
+.swiper-container {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.bg-img1 {
+  z-index: 4;
+  background-image: url(ideas/imgs/ibrahim-mushan-qnjKufYqIIE-unsplash.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img2 {
+  z-index: 4;
+  background-image: url(ideas/imgs/marco-midmore-b-uiCzSxPdk-unsplash.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img3 {
+  z-index: 4;
+  background-image: url(ideas/imgs/juli-kosolapova-aQiXrqNMZ0g-unsplash.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  &__title {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color: $cWhite;
+    font-size: 100px;
+    z-index: 5;
+    opacity: 0;
+    @include animation(
+      $name: kf-hero-title,
+      $duration: 2s,
+    )
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 53%;
+    left: 43%;
+    color: $cWhite;
+    font-size: 20px;
+    z-index: 5;
+    @include animation(
+      $name: kf-hero-title,
+      $duration: 2s,
+    )
+  }
+
+  &__subtitle2 {
+    top: 60%;
+    left: 42.4%;
+    @extend .hero__subtitle;
+  }
+}
+
+@keyframes kf-hero-title {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  50.1% {
+    opacity: 1;
+    transform: translate(-50%, calc(-50% + 20px));
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
