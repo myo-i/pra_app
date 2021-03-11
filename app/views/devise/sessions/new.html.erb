@@ -1,5 +1,7 @@
 <%= render "shared/header" %>
 <%= form_with model: @user, url: user_session_path, class: '', local: true do |f| %>
+  <div class='h-800 bg-light set-mg'>
+    <div class='h-500 bg-white '>
         <label class="">メールアドレス</label>
         <%= f.email_field :email, class:"", id:"", placeholder:"Email", autofocus: true %>
         <label class="">パスワード</label>
@@ -7,5 +9,7 @@
       <div class=''>
         <%= f.submit "ログイン" ,class:"" %>
       </div>
+    </div>
+  </div>
 <% end %>
 <%= render "shared/footer" %>
