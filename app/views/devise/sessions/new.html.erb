@@ -1,13 +1,17 @@
 <%= render "shared/header" %>
 <%= form_with model: @user, url: user_session_path, class: '', local: true do |f| %>
-  <div class='h-800 bg-light set-mg'>
-    <div class='h-500 bg-white '>
-        <label class="">メールアドレス</label>
-        <%= f.email_field :email, class:"", id:"", placeholder:"Email", autofocus: true %>
-        <label class="">パスワード</label>
-        <%= f.password_field :password, class:"", id:"", placeholder:"password", autofocus: true %>
-      <div class=''>
-        <%= f.submit "ログイン" ,class:"" %>
+  <div class='h-800 bg-light set-mg d-flex justify-content-center align-items-center w-100'>
+    <div class='h-500 bg-white w-75 pt-5'>
+      <div class="form-group ">
+        <label class="font-weight-bold form-name">メールアドレス</label>
+        <%= f.email_field :email, class:"form-control w-75 mt-2 mx-auto", id:"", placeholder:"Email", autofocus: true %>
+      </div>
+      <div class="form-group ">
+        <label class="font-weight-bold form-name">パスワード</label>
+        <%= f.password_field :password, class:"form-control w-75 mt-2 mx-auto", id:"", placeholder:"password", autofocus: true %>
+      </div>
+      <div class='d-flex justify-content-center'>
+        <%= f.submit "ログイン" ,class:"btn btn-outline-dark custom-inbtn" %>
       </div>
     </div>
   </div>
