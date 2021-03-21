@@ -9,10 +9,8 @@ $cBlack: black;
 }
 
 .new-ideas {
-  height: 1000px;
+  height: 1500px;
   width: 80%;
-  // display: flex;
-  // justify-content: center;
 }
 
 .m-form {
@@ -20,9 +18,17 @@ $cBlack: black;
 }
 
 .new-form {
-  height: 500px;
+  height: 600px;
   width: 100%;
   padding: 0 50px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 
 .form-title {
