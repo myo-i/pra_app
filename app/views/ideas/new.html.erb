@@ -1,0 +1,16 @@
+<%= render "shared/header" %>
+<div class='bg-light new-container'>
+  <div class='bg-white new-ideas'>
+    <%= form_with  model: @idea, url: ideas_path, local: true do |f| %>
+      <div class='new-form mt-50'>
+        <h2 class='form-title'><span class='form-num'>1</span>あなたの大切だと思った部分の要約、メモを書く</h2>
+        <%= f.text_area :idea_1, class:"form", id:"", placeholder:"本の肝となる部分ではなく、あなたの心に響いた言葉などを書きましょう"%>
+      </div>
+      <div class='new-form mt-100'>
+        <h2 class='form-title'><span class='form-num'>2</span>本全体を通しての感想やアイデアを書く</h2>
+        <%= f.text_area :idea_1, class:"form", id:"", placeholder:"本を読み通して思ったことや、思いついたアイデアを書いてみましょう"%>
+      </div>
+    <% end %>
+  </div>
+</div>
+<%= render "shared/footer" %>
